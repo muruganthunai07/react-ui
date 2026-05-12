@@ -1,0 +1,167 @@
+@import 'tailwindcss';
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+}
+
+/* Define your design tokens using the new @theme block */
+@theme {
+  --radius: 0.5rem;
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(240 10% 3.9%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(240 10% 3.9%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(240 10% 3.9%);
+  --color-primary: hsl(43 96% 56%);
+  --color-primary-foreground: hsl(240 5.9% 10%);
+  --color-secondary: hsl(240 4.8% 95.9%);
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+  --color-muted: hsl(240 4.8% 95.9%);
+  --color-muted-foreground: hsl(240 3.8% 46.1%);
+  --color-accent: hsl(240 4.8% 95.9%);
+  --color-accent-foreground: hsl(240 5.9% 10%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-border: hsl(240 5.9% 90%);
+  --color-input: hsl(240 5.9% 90%);
+  --color-ring: hsl(43 96% 56%);
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-background: hsl(240 10% 3.9%);
+  --color-foreground: hsl(0 0% 98%);
+  --color-card: hsl(240 10% 3.9%);
+  --color-card-foreground: hsl(0 0% 98%);
+  --color-popover: hsl(240 10% 3.9%);
+  --color-popover-foreground: hsl(0 0% 98%);
+  --color-primary: hsl(43 96% 56%);
+  --color-primary-foreground: hsl(240 5.9% 10%);
+  --color-secondary: hsl(240 3.7% 15.9%);
+  --color-secondary-foreground: hsl(0 0% 98%);
+  --color-muted: hsl(240 3.7% 15.9%);
+  --color-muted-foreground: hsl(240 5% 64.9%);
+  --color-accent: hsl(240 3.7% 15.9%);
+  --color-accent-foreground: hsl(0 0% 98%);
+  --color-destructive: hsl(0 62.8% 30.6%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-border: hsl(240 3.7% 15.9%);
+  --color-input: hsl(240 3.7% 15.9%);
+  --color-ring: hsl(43 96% 56%);
+}
+
+/* Optional theme variants */
+.theme-red {
+  --color-primary: hsl(0 84.2% 60.2%);
+  --color-ring: hsl(0 84.2% 60.2%);
+}
+
+.theme-rose {
+  --color-primary: hsl(340, 82%, 60%);
+  --color-ring: hsl(340, 82%, 60%);
+}
+
+.theme-orange {
+  --color-primary: hsl(24, 94%, 50%);
+  --color-ring: hsl(24, 94%, 50%);
+}
+
+.theme-green {
+  --color-primary: hsl(142, 71%, 45%);
+  --color-ring: hsl(142, 71%, 45%);
+}
+
+.theme-blue {
+  --color-primary: hsl(217.2 91.2% 59.8%);
+  --color-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.theme-yellow {
+  --color-primary: hsl(43, 96%, 56%);
+  --color-ring: hsl(43, 96%, 56%);
+}
+
+.theme-violet {
+  --color-primary: hsl(262, 83%, 58%);
+  --color-ring: hsl(262, 83%, 58%);
+}
+
+.theme-pink {
+  --color-primary: hsl(330, 81%, 60%);
+  --color-ring: hsl(330, 81%, 60%);
+}
+
+.theme-indigo {
+  --color-primary: hsl(238, 83%, 58%);
+  --color-ring: hsl(238, 83%, 58%);
+}
+
+.theme-cyan {
+  --color-primary: hsl(187, 85%, 53%);
+  --color-ring: hsl(187, 85%, 53%);
+}
+
+.theme-emerald {
+  --color-primary: hsl(156, 72%, 45%);
+  --color-ring: hsl(156, 72%, 45%);
+}
+
+/* Base styles */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Optional utility layer for compatibility with shadcn classnames */
+@layer utilities {
+  .bg-background {
+    background-color: var(--color-background);
+  }
+  .text-foreground {
+    color: var(--color-foreground);
+  }
+  .border-border {
+    border-color: var(--color-border);
+  }
+}
+
+/* Carousel animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

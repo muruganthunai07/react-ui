@@ -1,0 +1,28 @@
+{
+  "navItems": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icon": "Home",
+      "href": "/"
+    },
+    {
+      "id": "results",
+      "label": "Results",
+      "icon": "BarChart2",
+      "href": "/results"
+    },
+    {
+      "id": "profile",
+      "label": "Profile",
+      "icon": "User",
+      "href": "/profile"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "icon": "Settings",
+      "href": "/settings"
+    }
+  ]
+}

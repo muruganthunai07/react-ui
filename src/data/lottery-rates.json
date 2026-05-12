@@ -1,0 +1,82 @@
+{
+  "rates": [
+    {
+      "id": "single-lot",
+      "name": "Single Lot",
+      "agentPrice": 18.0,
+      "clientPrice": 11.0
+    },
+    {
+      "id": "double-lot",
+      "name": "Double Lot",
+      "agentPrice": 10.8,
+      "clientPrice": 11.0
+    },
+    {
+      "id": "three-lot-6250",
+      "name": "Three Lot 6250",
+      "agentPrice": 12.0,
+      "clientPrice": 12.0
+    },
+    {
+      "id": "three-lot-10000",
+      "name": "Three Lot 10000",
+      "agentPrice": 0.0,
+      "clientPrice": 22.0
+    },
+    {
+      "id": "three-lot-15000",
+      "name": "Three Lot 15000",
+      "agentPrice": 27.0,
+      "clientPrice": 28.0
+    },
+    {
+      "id": "three-lot-17500",
+      "name": "Three Lot 17500",
+      "agentPrice": 29.5,
+      "clientPrice": 30.0
+    },
+    {
+      "id": "three-lot-20000",
+      "name": "Three Lot 20000",
+      "agentPrice": 32.0,
+      "clientPrice": 33.0
+    },
+    {
+      "id": "three-lot-30000",
+      "name": "Three Lot 30000",
+      "agentPrice": 54.0,
+      "clientPrice": 55.0
+    },
+    {
+      "id": "three-lot-35000",
+      "name": "Three Lot 35000",
+      "agentPrice": 59.0,
+      "clientPrice": 60.0
+    },
+    {
+      "id": "three-lot-40000",
+      "name": "Three Lot 40000",
+      "agentPrice": 62.5,
+      "clientPrice": 65.0
+    },
+    {
+      "id": "four-lot-100k",
+      "name": "Four Lot 100K",
+      "agentPrice": 18.0,
+      "clientPrice": 20.0
+    },
+    {
+      "id": "four-lot-250k",
+      "name": "Four Lot 250K",
+      "agentPrice": 48.0,
+      "clientPrice": 50.0
+    },
+    {
+      "id": "four-lot-500k",
+      "name": "Four Lot 500K",
+      "agentPrice": 96.0,
+      "clientPrice": 100.0
+    }
+  ]
+}

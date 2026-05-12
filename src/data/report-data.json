@@ -1,0 +1,76 @@
+{
+  "salesReports": [
+    {
+      "id": "1",
+      "date": "2023-06-10",
+      "lotName": "Sthree Sakthi",
+      "time": "16:00",
+      "totalSales": 15000,
+      "agentCount": 12,
+      "userCount": 150
+    },
+    {
+      "id": "2",
+      "date": "2023-06-09",
+      "lotName": "Dear Bangalakshmi",
+      "time": "17:30",
+      "totalSales": 22000,
+      "agentCount": 18,
+      "userCount": 220
+    }
+  ],
+  "drawReports": [
+    {
+      "id": "1",
+      "date": "2023-06-10",
+      "lotName": "Sthree Sakthi",
+      "time": "16:00",
+      "winningNumbers": ["2", "3", "8"],
+      "totalPayout": 8500
+    },
+    {
+      "id": "2",
+      "date": "2023-06-09",
+      "lotName": "Dear Bangalakshmi",
+      "time": "17:30",
+      "winningNumbers": ["7", "5", "2"],
+      "totalPayout": 15000
+    }
+  ],
+  "dbfReports": [
+    {
+      "id": "1",
+      "date": "2023-06-10",
+      "lotName": "Sthree Sakthi",
+      "time": "16:00",
+      "recordCount": 150,
+      "fileSize": "2.3 MB"
+    },
+    {
+      "id": "2",
+      "date": "2023-06-09",
+      "lotName": "Dear Bangalakshmi",
+      "time": "17:30",
+      "recordCount": 220,
+      "fileSize": "3.1 MB"
+    }
+  ],
+  "costReports": [
+    {
+      "id": "1",
+      "date": "2023-06-10",
+      "lotName": "Sthree Sakthi",
+      "time": "16:00",
+      "totalCost": 6500,
+      "profit": 8500
+    },
+    {
+      "id": "2",
+      "date": "2023-06-09",
+      "lotName": "Dear Bangalakshmi",
+      "time": "17:30",
+      "totalCost": 7000,
+      "profit": 15000
+    }
+  ]
+}

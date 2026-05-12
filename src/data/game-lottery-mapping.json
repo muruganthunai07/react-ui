@@ -1,0 +1,5 @@
+{
+  "3digit": ["single-lot", "double-lot", "three-lot-6250", "three-lot-10000", "three-lot-15000"],
+  "4digit": ["four-lot-100k", "four-lot-250k", "four-lot-500k"],
+  "dice": ["single-lot", "double-lot"]
+}

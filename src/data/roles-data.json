@@ -1,0 +1,33 @@
+{
+  "0": { "isAdmin": false, "role": "User", "screens": [] },
+  "1": { "isAdmin": false, "role": "Agent", "screens": [] },
+  "2": {
+    "isAdmin": true,
+    "role": "Admin",
+    "screens": [
+      "/admin",
+      "/admin/games",
+      "/admin/lot-pricing",
+      "/admin/reports",
+      "/admin/deposits",
+      "/admin/users",
+      "/admin/settings",
+      "/admin/configurations"
+    ]
+  },
+  "3": {
+    "isAdmin": true,
+    "role": "SuperAdmin",
+    "screens": [
+      "/admin",
+      "/admin/games",
+      "/admin/results",
+      "/admin/lot-pricing",
+      "/admin/reports",
+      "/admin/deposits",
+      "/admin/users",
+      "/admin/settings",
+      "/admin/configurations"
+    ]
+  }
+}

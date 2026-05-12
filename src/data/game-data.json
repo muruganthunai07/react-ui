@@ -1,0 +1,102 @@
+{
+  "gameNames": ["GT Games", "Lucky Wins", "Fortune Bets", "Golden Chance"],
+  "gameCategories": [
+    {
+      "id": "lottery",
+      "name": "Lottery",
+      "color": "bg-pink-100 text-pink-500"
+    },
+    {
+      "id": "scratch",
+      "name": "Scratch",
+      "color": "bg-amber-100 text-amber-500"
+    },
+    {
+      "id": "casino",
+      "name": "Casino",
+      "color": "bg-orange-100 text-orange-500"
+    },
+    {
+      "id": "3digit",
+      "name": "3 Digit",
+      "color": "bg-blue-100 text-blue-500"
+    }
+  ],
+  "hotGames": [
+    {
+      "id": "dice",
+      "title": "Dice",
+      "image": "dice",
+      "bgColor": "bg-purple-600",
+      "times": ["1min", "3min", "5min"]
+    },
+    {
+      "id": "color",
+      "title": "Color",
+      "image": "color",
+      "bgColor": "bg-blue-600",
+      "times": ["1min", "3min", "5min"]
+    },
+    {
+      "id": "3digit",
+      "title": "3digit",
+      "image": "3digit",
+      "bgColor": "bg-pink-600",
+      "times": ["1min", "3min", "5min"]
+    }
+  ],
+  "timeOptions": {
+    "3digit": [
+      {
+        "id": "1min",
+        "label": "1min",
+        "minutes": 0,
+        "seconds": 55
+      },
+      {
+        "id": "3min",
+        "label": "3min",
+        "minutes": 2,
+        "seconds": 55
+      },
+      {
+        "id": "5min",
+        "label": "5min",
+        "minutes": 4,
+        "seconds": 55
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icon": "Home",
+      "href": "/"
+    },
+    {
+      "id": "games",
+      "label": "Games",
+      "icon": "Gamepad2",
+      "href": "/games"
+    },
+    {
+      "id": "bets",
+      "label": "Bets",
+      "icon": "Dices",
+      "href": "/bets"
+    },
+    {
+      "id": "wallet",
+      "label": "Wallet",
+      "icon": "Wallet",
+      "href": "/wallet"
+    },
+    {
+      "id": "profile",
+      "label": "Profile",
+      "icon": "User",
+      "href": "/profile"
+    }
+  ]
+}
