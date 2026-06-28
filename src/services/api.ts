@@ -13,7 +13,7 @@ API.interceptors.request.use(
   (config) => {
     startLoading();
 
-    const latestToken = sessionStorage.getItem('token');
+    const latestToken = localStorage.getItem('token');
     if (latestToken) {
       config.headers.Authorization = `Bearer ${latestToken}`;
     }
