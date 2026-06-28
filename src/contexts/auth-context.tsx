@@ -137,7 +137,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       };
       localStorage.setItem('user', JSON.stringify(loggedUser));
       setUser(loggedUser);
-      sessionStorage.setItem('token', response.token);
+      localStorage.setItem('token', response.token);
       return { success: true, message: ['Login successful'] };
     } catch (err: unknown) {
       let errorMessages: string[] = ['Login failed'];
@@ -185,7 +185,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       };
       localStorage.setItem('user', JSON.stringify(loggedUser));
       setUser(loggedUser);
-      sessionStorage.setItem('token', response.token);
+      localStorage.setItem('token', response.token);
       return { success: true, message: ['Signup successful'] };
     } catch (err: unknown) {
       // Use ApiError model for error handling
@@ -294,7 +294,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = () => {
     // clearCart();
     setUser(null);
-    sessionStorage.removeItem('token');
     localStorage.clear();
     router('/');
   };
